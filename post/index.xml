@@ -6,10 +6,32 @@
     <description>Recent content in Posts on StarGazerQ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Aug 2019 11:25:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2019 19:40:50 +0800</lastBuildDate>
     
 	<atom:link href="https://stargazerq.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>安装hugo的方法</title>
+      <link>https://stargazerq.github.io/post/blog2/</link>
+      <pubDate>Sat, 24 Aug 2019 19:40:50 +0800</pubDate>
+      
+      <guid>https://stargazerq.github.io/post/blog2/</guid>
+      <description>1.下载hugo 本人使用的是win10系统，所以去网页搜hugo直接下载即可
+GitHub上就有，挑选对应自己系统的版本就行
+2.修改系统变量 将之前下的压缩包解压，然后把其路径添加进win10系统变量，就可以调用了
+操作依次为：
+1.右键我的电脑
+2.高级系统设置
+3.环境变量设置
+4.添加新的系统变量，输入之前hugo的路径就完事了
+如图：
+3.完成 然后就可以在cmd或者power shell中调用了，如果成功即安装完成 MAC OS 如果是苹果用户的话，就更简单啦
+直接用brew这个工具就直接能装
+命令行输入 brew install hugo
+直接一键完成
+唉，苹果系统还是方便呀</description>
+    </item>
     
     <item>
       <title>WELCOME</title>
