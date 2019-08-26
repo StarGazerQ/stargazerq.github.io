@@ -6,10 +6,67 @@
     <description>Recent content in Posts on StarGazerQ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Aug 2019 19:40:50 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2019 20:20:14 +0800</lastBuildDate>
     
 	<atom:link href="https://stargazerq.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何更新博客</title>
+      <link>https://stargazerq.github.io/post/blog4/</link>
+      <pubDate>Mon, 26 Aug 2019 20:20:14 +0800</pubDate>
+      
+      <guid>https://stargazerq.github.io/post/blog4/</guid>
+      <description>如何更新博客 建立完了博客，接下来就该更新博客了 命令行输入 hugo new post/blog2.md
+即可自动创建新博客
+markdown文件可用VS code或其他软件打开进行书写
+markdown的书写规则 这里简单的介绍几种md语法，更多的知识还是要大家在实践中得到
+标题 在#后跟个空格再写文字即为标题，根据#的个数来决定标题的级数
+一级标题 &amp;ldquo;# 一级标题&amp;rdquo; 二级标题 &amp;ldquo;## 二级标题&amp;rdquo; 三级标题 &amp;ldquo;### 三级标题&amp;rdquo; 四级标题 &amp;ldquo;#### 四级标题&amp;rdquo; 五级标题 &amp;ldquo;##### 五级标题&amp;rdquo; 以此类推
+引用 在引用的文字前加&amp;gt;即可
+&amp;gt;就像这样
+分割线 三个或三个以上***即可组成分割线
+代码 如果要输入代码，又不想让其生效，用`将其包裹即可 就像这样`
+语法还有很多，今天就到这吧，有空再说点其他的</description>
+    </item>
+    
+    <item>
+      <title>用hugo&#43;GitHub建立静态博客</title>
+      <link>https://stargazerq.github.io/post/blog3/</link>
+      <pubDate>Sun, 25 Aug 2019 22:43:08 +0800</pubDate>
+      
+      <guid>https://stargazerq.github.io/post/blog3/</guid>
+      <description>用hugo+GitHub建立静态博客 接着之前的继续，在win10设置好hugo环境变量之后，便可以在cmd或者powershell里使用了
+一.用hugo搭建本地博客 命令行输入
+hugo new site bolg
+即可建立生成博客文件夹
+如图
+接着会提示让我们去下载主题，就按着它的步骤做就行
+进入https://themes.gohugo.io/ 下载自己喜欢的主题
+如图
+网站中里也有下载方法的说明
+进入博客的path后，命令行输入教程中的命令后即可完成下载
+如图
+下载完主题后，输入
+hugo server -t m10c &amp;ndash;buildDrafts
+即可搭建本地本地博客，其中m10c为所使用的主题的名字
+如图
+可以打开浏览器进入127.0.0.1检查是否成功
+二.将本地博客上传至GitHub 本地博客搭建完后，可以将其上传至GitHub资料库，免费易用很方便
+输入
+hugo &amp;ndash;theme=m10c &amp;ndash;baseUrl=&amp;ldquo;https://stargazerq.github.io/&amp;quot; &amp;ndash;buildDrafts
+将其与你的GitHub资料库关联，这会在路径中生成一个public文件夹
+然后进入public文件夹，使用GitHub将其上传至自己的文件库即可
+代码为
+cd public
+git init
+git add .
+git commit -m &amp;ldquo;hugo博客测试&amp;rdquo;
+git remote add origin https://github.com/StarGazerQ/ &amp;ldquo;自己资料库的地址&amp;rdquo; stargazerq.github.io.git
+git push -u origin master
+如图 上传完成后即可通过访问资料库地址https://stargazerq.github.io/来访问私人博客
+自此，个人博客建立完成</description>
+    </item>
     
     <item>
       <title>安装hugo的方法</title>

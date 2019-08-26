@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>用hugo&#43;GitHub建立静态博客 // StarGazerQ&#39;s Blog</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="StarGzerQ" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://stargazerq.github.io/css/main.min.f90f5edd436ec7b74ad05479a05705770306911f721193e7845948fb07fe1335.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="用hugo&#43;GitHub建立静态博客"/>
+<meta name="twitter:description" content="用hugo&#43;GitHub建立静态博客 接着之前的继续，在win10设置好hugo环境变量之后，便可以在cmd或者powershell里使用了
+一.用hugo搭建本地博客 命令行输入
+hugo new site bolg
+即可建立生成博客文件夹
+如图
+接着会提示让我们去下载主题，就按着它的步骤做就行
+进入https://themes.gohugo.io/ 下载自己喜欢的主题
+如图
+网站中里也有下载方法的说明
+进入博客的path后，命令行输入教程中的命令后即可完成下载
+如图
+下载完主题后，输入
+hugo server -t m10c &ndash;buildDrafts
+即可搭建本地本地博客，其中m10c为所使用的主题的名字
+如图
+可以打开浏览器进入127.0.0.1检查是否成功
+二.将本地博客上传至GitHub 本地博客搭建完后，可以将其上传至GitHub资料库，免费易用很方便
+输入
+hugo &ndash;theme=m10c &ndash;baseUrl=&ldquo;https://stargazerq.github.io/&quot; &ndash;buildDrafts
+将其与你的GitHub资料库关联，这会在路径中生成一个public文件夹
+然后进入public文件夹，使用GitHub将其上传至自己的文件库即可
+代码为
+cd public
+git init
+git add .
+git commit -m &ldquo;hugo博客测试&rdquo;
+git remote add origin https://github.com/StarGazerQ/ &ldquo;自己资料库的地址&rdquo; stargazerq.github.io.git
+git push -u origin master
+如图 上传完成后即可通过访问资料库地址https://stargazerq.github.io/来访问私人博客
+自此，个人博客建立完成"/>
+
+    <meta property="og:title" content="用hugo&#43;GitHub建立静态博客" />
+<meta property="og:description" content="用hugo&#43;GitHub建立静态博客 接着之前的继续，在win10设置好hugo环境变量之后，便可以在cmd或者powershell里使用了
+一.用hugo搭建本地博客 命令行输入
+hugo new site bolg
+即可建立生成博客文件夹
+如图
+接着会提示让我们去下载主题，就按着它的步骤做就行
+进入https://themes.gohugo.io/ 下载自己喜欢的主题
+如图
+网站中里也有下载方法的说明
+进入博客的path后，命令行输入教程中的命令后即可完成下载
+如图
+下载完主题后，输入
+hugo server -t m10c &ndash;buildDrafts
+即可搭建本地本地博客，其中m10c为所使用的主题的名字
+如图
+可以打开浏览器进入127.0.0.1检查是否成功
+二.将本地博客上传至GitHub 本地博客搭建完后，可以将其上传至GitHub资料库，免费易用很方便
+输入
+hugo &ndash;theme=m10c &ndash;baseUrl=&ldquo;https://stargazerq.github.io/&quot; &ndash;buildDrafts
+将其与你的GitHub资料库关联，这会在路径中生成一个public文件夹
+然后进入public文件夹，使用GitHub将其上传至自己的文件库即可
+代码为
+cd public
+git init
+git add .
+git commit -m &ldquo;hugo博客测试&rdquo;
+git remote add origin https://github.com/StarGazerQ/ &ldquo;自己资料库的地址&rdquo; stargazerq.github.io.git
+git push -u origin master
+如图 上传完成后即可通过访问资料库地址https://stargazerq.github.io/来访问私人博客
+自此，个人博客建立完成" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stargazerq.github.io/post/blog3/" />
+<meta property="article:published_time" content="2019-08-25T22:43:08+08:00" />
+<meta property="article:modified_time" content="2019-08-25T22:43:08+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://stargazerq.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="StarGzerQ" /></a>
+      <h1>StarGazerQ&#39;s Blog</h1>
+      <p>A simple EE student</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/StarGazerQ/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">用hugo&#43;GitHub建立静态博客</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Aug 25, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      
+
+<h2 id="用hugo-github建立静态博客">用hugo+GitHub建立静态博客</h2>
+
+<p>接着之前的继续，在win10设置好hugo环境变量之后，便可以在cmd或者powershell里使用了</p>
+
+<h2 id="一-用hugo搭建本地博客">一.用hugo搭建本地博客</h2>
+
+<p>命令行输入<br />
+hugo new site bolg<br />
+即可建立生成博客文件夹<br />
+如图<br />
+<img src="http://ww1.sinaimg.cn/mw690/00780jzcgy1g6dcnyxvo7j30mq0bmgnw.jpg" alt="hugo" /><br />
+接着会提示让我们去下载主题，就按着它的步骤做就行<br />
+进入<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>  下载自己喜欢的主题<br />
+如图<br />
+<img src="http://ww1.sinaimg.cn/mw690/00780jzcgy1g6dcu4gr3yj31370nawgc.jpg" alt="主题网站" />
+网站中里也有下载方法的说明<br />
+进入博客的path后，命令行输入教程中的命令后即可完成下载<br />
+如图<br />
+<img src="http://ww1.sinaimg.cn/mw690/00780jzcgy1g6dczvm0noj30lf0j6gnt.jpg" alt="下载主题" />
+下载完主题后，输入</p>
+
+<p>hugo server -t m10c &ndash;buildDrafts</p>
+
+<p>即可搭建本地本地博客，其中m10c为所使用的主题的名字<br />
+如图<br />
+<img src="http://ww1.sinaimg.cn/mw690/00780jzcgy1g6dd3i4ty8j312j0lvtct.jpg" alt="本地博客搭建完成" />
+可以打开浏览器进入127.0.0.1检查是否成功</p>
+
+<h2 id="二-将本地博客上传至github">二.将本地博客上传至GitHub</h2>
+
+<p>本地博客搭建完后，可以将其上传至GitHub资料库，免费易用很方便<br />
+输入<br />
+hugo &ndash;theme=m10c &ndash;baseUrl=&ldquo;<a href="https://stargazerq.github.io/&quot;">https://stargazerq.github.io/&quot;</a> &ndash;buildDrafts<br />
+将其与你的GitHub资料库关联，这会在路径中生成一个public文件夹<br />
+<img src="http://ww1.sinaimg.cn/mw690/00780jzcgy1g6ddb0twafj30o808udhj.jpg" alt="public" /><br />
+然后进入public文件夹，使用GitHub将其上传至自己的文件库即可<br />
+代码为<br />
+cd public<br />
+git init<br />
+git add .<br />
+git commit -m &ldquo;hugo博客测试&rdquo;<br />
+git remote add origin <a href="https://github.com/StarGazerQ/">https://github.com/StarGazerQ/</a> &ldquo;自己资料库的地址&rdquo;  stargazerq.github.io.git<br />
+git push -u origin master<br />
+如图
+<img src="http://ww1.sinaimg.cn/mw690/00780jzcgy1g6dddqtmlbj30sh0duacu.jpg" alt="上传" />
+上传完成后即可通过访问资料库地址<a href="https://stargazerq.github.io/">https://stargazerq.github.io/</a>来访问私人博客<br />
+自此，个人博客建立完成</p>
+
+<hr />
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
