@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>用xtu避免笔记本出现降频 // StarGazerQ&#39;s Blog</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="StarGzerQ" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://stargazerq.github.io/css/main.min.f90f5edd436ec7b74ad05479a05705770306911f721193e7845948fb07fe1335.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="用xtu避免笔记本出现降频"/>
+<meta name="twitter:description" content="用xtu避免笔记本出现降频 游戏本在夏天真的顶不住，尤其是八代九代cpu，33度的室温分分钟达到100度。
+因为撞到了温度墙，不少厂商没调教好的游戏本很容易出现功耗限制导致降频来强行降温。
+这导致了游戏时会出现时不时的卡顿，体验极其糟糕。。。
+所以今天以本人i7 8750hq &#43; 2060 配置的笔记本来做个示范，用xtu手动限制cpu功耗来避免撞到温度墙而出现的极端降频。
+一：安装XTU 去英特尔官网下载Extreme Tuning Utility
+xtu
+xtu是牙膏厂官方出的调教英特尔cpu的软件，本来是用来玩超频的，但也可以用来限制功率减低cpu发热
+二：限制cpu功耗 如图，将pl1与pl2分别拉至60w和40w（具体调整多少取决你机器的散热能力，可自行选择），限制cpu的发热量，再略微减一减cpu的电压（-0.12v比较合适，再低可能会蓝屏），能提升一点性能，算是个降压超频（cpu频率由电流控制，降低电压能让cpu在相同功率下得到更高睿频）
+三：烤机实测 此图是在没有进行xtu调试时烤机的状态，可以看到cpu迅速冲到100度，然后降频到2.42GHz（有些电脑会降的更多，就会影响游戏体验）
+此图是在开启xtu降频之后的效果，可以看到cpu温度一直保持在90度左右，没有碰撞温度墙，cpu频率可以保持在3Ghz
+从温度走势可以看到，虽热温度比降频时略高一些，但是能在不碰撞温度墙的同时保持一个较高的性能
+注意事项 根据bios的不同，xtu有时在重启电脑后会失效，建议右下角save游戏时调用即可
+有些控制中心软件如AWCC等，可能内置xtu插件，会与xtu冲突，请注意"/>
+
+    <meta property="og:title" content="用xtu避免笔记本出现降频" />
+<meta property="og:description" content="用xtu避免笔记本出现降频 游戏本在夏天真的顶不住，尤其是八代九代cpu，33度的室温分分钟达到100度。
+因为撞到了温度墙，不少厂商没调教好的游戏本很容易出现功耗限制导致降频来强行降温。
+这导致了游戏时会出现时不时的卡顿，体验极其糟糕。。。
+所以今天以本人i7 8750hq &#43; 2060 配置的笔记本来做个示范，用xtu手动限制cpu功耗来避免撞到温度墙而出现的极端降频。
+一：安装XTU 去英特尔官网下载Extreme Tuning Utility
+xtu
+xtu是牙膏厂官方出的调教英特尔cpu的软件，本来是用来玩超频的，但也可以用来限制功率减低cpu发热
+二：限制cpu功耗 如图，将pl1与pl2分别拉至60w和40w（具体调整多少取决你机器的散热能力，可自行选择），限制cpu的发热量，再略微减一减cpu的电压（-0.12v比较合适，再低可能会蓝屏），能提升一点性能，算是个降压超频（cpu频率由电流控制，降低电压能让cpu在相同功率下得到更高睿频）
+三：烤机实测 此图是在没有进行xtu调试时烤机的状态，可以看到cpu迅速冲到100度，然后降频到2.42GHz（有些电脑会降的更多，就会影响游戏体验）
+此图是在开启xtu降频之后的效果，可以看到cpu温度一直保持在90度左右，没有碰撞温度墙，cpu频率可以保持在3Ghz
+从温度走势可以看到，虽热温度比降频时略高一些，但是能在不碰撞温度墙的同时保持一个较高的性能
+注意事项 根据bios的不同，xtu有时在重启电脑后会失效，建议右下角save游戏时调用即可
+有些控制中心软件如AWCC等，可能内置xtu插件，会与xtu冲突，请注意" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stargazerq.github.io/post/blog6/" />
+<meta property="article:published_time" content="2019-08-29T22:12:52+08:00" />
+<meta property="article:modified_time" content="2019-08-29T22:12:52+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://stargazerq.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="StarGzerQ" /></a>
+      <h1>StarGazerQ&#39;s Blog</h1>
+      <p>没有人会嘲笑一个努力的人</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/StarGazerQ/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">用xtu避免笔记本出现降频</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Aug 29, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      
+
+<h2 id="用xtu避免笔记本出现降频">用xtu避免笔记本出现降频</h2>
+
+<p>游戏本在夏天真的顶不住，尤其是八代九代cpu，33度的室温分分钟达到100度。<br />
+因为撞到了温度墙，不少厂商没调教好的游戏本很容易出现功耗限制导致降频来强行降温。<br />
+这导致了游戏时会出现时不时的卡顿，体验极其糟糕。。。<br />
+所以今天以本人i7 8750hq + 2060 配置的笔记本来做个示范，用xtu手动限制cpu功耗来避免撞到温度墙而出现的极端降频。</p>
+
+<h3 id="一-安装xtu">一：安装XTU</h3>
+
+<p>去英特尔官网下载Extreme Tuning Utility<br />
+<a href="https://downloadcenter.intel.com/zh-cn/download/24075/Intel-Extreme-Tuning-Utility-Intel-XTU-">xtu</a><br />
+xtu是牙膏厂官方出的调教英特尔cpu的软件，本来是用来玩超频的，但也可以用来限制功率减低cpu发热</p>
+
+<h3 id="二-限制cpu功耗">二：限制cpu功耗</h3>
+
+<p><img src="http://ww1.sinaimg.cn/large/00780jzcly1g6i4341um9j31b00pzn4l.jpg" alt="xtu界面" /><br />
+如图，将pl1与pl2分别拉至60w和40w（具体调整多少取决你机器的散热能力，可自行选择），限制cpu的发热量，再略微减一减cpu的电压（-0.12v比较合适，再低可能会蓝屏），能提升一点性能，算是个降压超频（cpu频率由电流控制，降低电压能让cpu在相同功率下得到更高睿频）</p>
+
+<h3 id="三-烤机实测">三：烤机实测</h3>
+
+<p><img src="https://i.loli.net/2019/08/30/eKBhvbSYDkcCaIO.jpg" alt="烤机1" /><br />
+此图是在没有进行xtu调试时烤机的状态，可以看到cpu迅速冲到100度，然后降频到2.42GHz（有些电脑会降的更多，就会影响游戏体验）<br />
+<img src="https://i.loli.net/2019/08/30/uXLcBC9ydG4w7Ft.jpg" alt="烤机2" /><br />
+此图是在开启xtu降频之后的效果，可以看到cpu温度一直保持在90度左右，没有碰撞温度墙，cpu频率可以保持在3Ghz<br />
+<img src="https://i.loli.net/2019/08/30/32bPlLRnxMQDAae.jpg" alt="温度走势" />
+从温度走势可以看到，虽热温度比降频时略高一些，但是能在不碰撞温度墙的同时保持一个较高的性能</p>
+
+<h3 id="注意事项">注意事项</h3>
+
+<p>根据bios的不同，xtu有时在重启电脑后会失效，建议右下角save游戏时调用即可<br />
+有些控制中心软件如AWCC等，可能内置xtu插件，会与xtu冲突，请注意<br />
+<img src="https://i.loli.net/2019/08/30/RsirCGXkS7FoEnW.jpg" alt="awcc" /></p>
+
+<hr />
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

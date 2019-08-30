@@ -6,10 +6,61 @@
     <description>Recent content in Posts on StarGazerQ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Aug 2019 20:20:14 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Aug 2019 22:46:57 +0800</lastBuildDate>
     
 	<atom:link href="https://stargazerq.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blog7</title>
+      <link>https://stargazerq.github.io/post/blog7/</link>
+      <pubDate>Fri, 30 Aug 2019 22:46:57 +0800</pubDate>
+      
+      <guid>https://stargazerq.github.io/post/blog7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>用xtu避免笔记本出现降频</title>
+      <link>https://stargazerq.github.io/post/blog6/</link>
+      <pubDate>Thu, 29 Aug 2019 22:12:52 +0800</pubDate>
+      
+      <guid>https://stargazerq.github.io/post/blog6/</guid>
+      <description>用xtu避免笔记本出现降频 游戏本在夏天真的顶不住，尤其是八代九代cpu，33度的室温分分钟达到100度。
+因为撞到了温度墙，不少厂商没调教好的游戏本很容易出现功耗限制导致降频来强行降温。
+这导致了游戏时会出现时不时的卡顿，体验极其糟糕。。。
+所以今天以本人i7 8750hq + 2060 配置的笔记本来做个示范，用xtu手动限制cpu功耗来避免撞到温度墙而出现的极端降频。
+一：安装XTU 去英特尔官网下载Extreme Tuning Utility
+xtu
+xtu是牙膏厂官方出的调教英特尔cpu的软件，本来是用来玩超频的，但也可以用来限制功率减低cpu发热
+二：限制cpu功耗 如图，将pl1与pl2分别拉至60w和40w（具体调整多少取决你机器的散热能力，可自行选择），限制cpu的发热量，再略微减一减cpu的电压（-0.12v比较合适，再低可能会蓝屏），能提升一点性能，算是个降压超频（cpu频率由电流控制，降低电压能让cpu在相同功率下得到更高睿频）
+三：烤机实测 此图是在没有进行xtu调试时烤机的状态，可以看到cpu迅速冲到100度，然后降频到2.42GHz（有些电脑会降的更多，就会影响游戏体验）
+此图是在开启xtu降频之后的效果，可以看到cpu温度一直保持在90度左右，没有碰撞温度墙，cpu频率可以保持在3Ghz
+从温度走势可以看到，虽热温度比降频时略高一些，但是能在不碰撞温度墙的同时保持一个较高的性能
+注意事项 根据bios的不同，xtu有时在重启电脑后会失效，建议右下角save游戏时调用即可
+有些控制中心软件如AWCC等，可能内置xtu插件，会与xtu冲突，请注意</description>
+    </item>
+    
+    <item>
+      <title>在md文件中插入图片和超链接</title>
+      <link>https://stargazerq.github.io/post/blog5/</link>
+      <pubDate>Tue, 27 Aug 2019 21:09:06 +0800</pubDate>
+      
+      <guid>https://stargazerq.github.io/post/blog5/</guid>
+      <description>在md文件中插入图片和超链接 为了让文章生动简明，肯定会用到图片和外站地址
+图片 ![图片名字](图片地址 &amp;quot;图片说明&amp;quot;)
+![放个图片试试](http://ww1.sinaimg.cn/large/00780jzcly1g69uzoucczj30fg0axgn2.jpg &amp;quot;放张图试试&amp;quot;)
+[]中填入图片名字， &amp;ldquo;&amp;ldquo;中是说明部分，也就是鼠标放在图片上时显示的字，可加可不加
+如果是网络图片,直接吧地址填入()即可
+要使用本地图片的话，就要涉及到图床
+这里介绍一个好用的图床——新浪微博
+谷歌chrome浏览器上也有很多免费图床的扩展工具，很方便，可以自己去看看
+超链接 和图片很像，去掉前面的!就行
+[超链接名字](地址 &amp;quot;说明&amp;quot;)
+[新浪](https://www.sina.com.cn/ &amp;quot;新浪&amp;quot;)
+新浪
+说明也是可加可不加</description>
+    </item>
     
     <item>
       <title>如何更新博客</title>
